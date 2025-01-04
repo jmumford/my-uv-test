@@ -1,0 +1,17 @@
+[project]
+name = "my-uv-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jeanette Mumford", email = "jeanette.mumford@gmail.com" } 
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+my-uv-test = "my_uv_test:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
