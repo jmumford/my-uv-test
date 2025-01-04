@@ -7,7 +7,10 @@ authors = [
     { name = "Jeanette Mumford", email = "jeanette.mumford@gmail.com" } 
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "numpy>=2.2.1",
+    "pandas>=2.2.3",
+]
 
 [project.scripts]
 my-uv-test = "my_uv_test:main"
@@ -15,3 +18,21 @@ my-uv-test = "my_uv_test:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.4",
+]
+
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+extend-select = ["E501", "W", "N", "R", "I"]
+
+[tool.pytest.ini_options]
+testpaths=['tests/tests_to_run.py']
