@@ -21,9 +21,9 @@ build-backend = "hatchling.build"
 
 [tool.uv]
 dev-dependencies = [
+    "ipykernel>=6.29.5",
     "pytest>=8.3.4",
 ]
-
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
