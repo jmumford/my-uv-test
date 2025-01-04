@@ -1,11 +1,11 @@
 print(
-    'kkkkkkkkjlskdjflksdjflsdjflkds jflksdjflkjdslkfjsd lkjflsdjflsdjfldsjflsdkjflsdjflksdjflksdjflksdjflskdjflsdkjfklsdjkl'
+    'kkkkkkkkjlskdjflksdjflsdjflkds jflksdjflkjdslkfjsd'
+    'lkjflsdjflsdjfldsjflsdkjflsdjflksdjflksdjflksdjflskdjflsdkjfklsdjkl'
 )
 
 
 def test_func(x):
-    value = x + 1
-    return value
+    return x + 1
 
 
 def return_boo():
@@ -17,3 +17,5 @@ a = 1
 junk = '22'
 
 hello = 'fast'
+
+cat = 'meow'
