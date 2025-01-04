@@ -35,9 +35,9 @@ quote-style = "single"
 extend-select = ["E501", "W", "N", "R", "I"]
 
 [tool.pytest.ini_options]
-testpaths=['tests/tests_to_run.py']
+testpaths = ["tests/tests_to_run.py"]
 
 [tool.pyright]
-exclude = ['.venv']
-venvPath = '.'
-venv = '.venv'
+exclude = [".venv"]
+venvPath = "."
+venv = ".venv"
